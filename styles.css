@@ -98,7 +98,7 @@ padding: 20px;
 }
 
 .right-box ul {
-  list-style: none;
+  /* list-style: none; */
 }
 
 .prev, .next {
