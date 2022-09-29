@@ -5,6 +5,7 @@
 
 let prev = document.querySelector(".prev");
 let content = document.querySelector(".content");
+let charImg = document.querySelector(".char-img");
 
 async function storeQuotes() {
   let response = await axios("https://www.breakingbadapi.com/api/quotes");
@@ -27,10 +28,12 @@ async function getCharacters() {
   let characters = [...response.data];
   let i = 0;
   content.addEventListener("click", (e) => {
-    if (e.target.classList.contains("prev")) {
-      console.log("getting prev");
+    if (e.target.classList.contains("prev") && i > 0) {
+      i--;
+      charImg.src = characters[i].img;
     } else if (e.target.classList.contains("next")) {
-      console.log("getting next");
+      i++;
+      charImg.src = characters[i].img;
     }
   });
 }
