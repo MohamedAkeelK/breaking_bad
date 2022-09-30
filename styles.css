@@ -16,8 +16,13 @@ body {
   background-color: rgb(33, 33, 33);
   background-image:url("https://images2.alphacoders.com/591/591596.jpg");background-position: center;
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   min-height: 130vh;
+  width: 100vw;
+  /* overflow-x: hidde  n; */
+  /* max-height: 130vh; */
+
 }
 
 .header-ct {
@@ -29,6 +34,7 @@ body {
 
 
 header {
+  width: 100vw;
   background-color: black;
   border-bottom: 5px solid hwb(50deg 20% 4%);
   padding: 20px;
@@ -39,8 +45,9 @@ header {
 }
 
 header .title {
-  font-size: 2rem;
+  /* font-size: 2rem; */
   letter-spacing: .8rem;
+  width: 300px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: bolder;
   margin-left: 5%;
@@ -57,7 +64,6 @@ header img {
 
 
 main {
-  /* border: 1px solid black; */
   width: 60%;
   border: 1px solid black;
   border-style: none;
@@ -89,7 +95,6 @@ color: hwb(50deg 20% 4%);
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 3px solid black; */
   border-style: none;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
@@ -141,8 +146,20 @@ color: hwb(50deg 20% 4%);
 }
 
 
-/* @media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
+ @media only screen and (max-width: 800px) {
+  .header-ct {
+    flex-direction: column;
+    flex-wrap: wrap;
+
   }
-} */
+  header{
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  h2.title {
+    padding-top: 20px;
+    text-align: center;
+    /* width: 100px; */
+  }
+} 
