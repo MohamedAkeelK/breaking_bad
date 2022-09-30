@@ -13,11 +13,12 @@
 }
 
 body {
-  background-color: rgb(33, 33, 33);
+  background-color: rgba(33, 33, 33, 0.278);
   background-image:url("https://images2.alphacoders.com/591/591596.jpg");background-position: center;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-blend-mode: multiply;
   min-height: 130vh;
   width: 100vw;
   /* overflow-x: hidde  n; */
@@ -25,11 +26,15 @@ body {
 
 }
 
+
+
 .header-ct {
-  background-color: rgba(33, 33, 33, 0.298);
+  background-color: rgba(255, 255, 255, 0.567);
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 25px;;
+
 }
 
 
@@ -42,17 +47,23 @@ header {
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 3rem;
+  background-image:url("https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/07/breaking-bad-walter-white.jpg");
+  background-position: center;
+  background-size: contain;
+  /* background-position: top-center; */
+  background-repeat: repeat;
 }
 
+
 header .title {
-  /* font-size: 2rem; */
+  font-size: 2rem;
   letter-spacing: .8rem;
   width: 300px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: bolder;
   margin-left: 5%;
-  background-color: inherit;
-  color: whitesmoke
+  /* background-color: inherit; */
+  color: black;
 }
 
 header img {
@@ -143,6 +154,7 @@ color: hwb(50deg 20% 4%);
 
 .prev:hover, .next:hover {
   cursor: pointer;
+  background-color: orange;
 }
 
 
