@@ -1,8 +1,3 @@
-// let characters;
-// let quotes;
-// let episodes;
-// let deaths;
-
 let prev = document.querySelector(".prev");
 let content = document.querySelector(".content");
 let charImg = document.querySelector(".char-img");
@@ -12,21 +7,6 @@ let occupation = document.querySelector(".occupation");
 let charStatus = document.querySelector(".status");
 let nickname = document.querySelector(".nickname");
 let portrayed = document.querySelector(".portrayed");
-
-async function storeQuotes() {
-  let response = await axios("https://www.breakingbadapi.com/api/quotes");
-  characters = [...response.data];
-}
-
-async function storeEpisodes() {
-  let response = await axios("https://www.breakingbadapi.com/api/episodes");
-  characters = [...response.data];
-}
-
-async function storeDeaths() {
-  let response = await axios("https://www.breakingbadapi.com/api/deaths");
-  characters = [...response.data];
-}
 
 async function getCharacters() {
   let response = await axios("https://www.breakingbadapi.com/api/characters");
