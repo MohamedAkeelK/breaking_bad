@@ -26,7 +26,7 @@ async function getCharacters() {
       nickname.innerText = "Nickname: " + characters[i].nickname;
       portrayed.innerText = "Portrayed: " + characters[i].portrayed;
       //
-    } else if (e.target.classList.contains("next")) {
+    } else if (e.target.classList.contains("next") && i < characters.length) {
       i++;
       charImg.src = characters[i].img;
       charName.innerText = "Name: " + characters[i].name;
